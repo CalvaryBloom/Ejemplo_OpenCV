@@ -43,7 +43,7 @@ while True:
 
     # CONTROL DE TECLADO
     # Espera 1ms por un evento de teclado.
-    key = cv.waitKey(1)
+    key = cv.waitKey(1) & 0xFF
 
     # Si la tecla presionada es 'q', salir del bucle
     if key == ord('q'):
